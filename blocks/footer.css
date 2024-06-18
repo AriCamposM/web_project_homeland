@@ -16,3 +16,19 @@
   line-height: 16px;
   text-align: center;
 }
+
+@media screen and (max-width: 768px) {
+  .footer__copyright {
+    margin: 0px;
+    margin-top: 88px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .footer__copyright {
+    margin: 0px;
+    margin-top: 64px;
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
