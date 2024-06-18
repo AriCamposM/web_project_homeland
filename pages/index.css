@@ -1,137 +1,131 @@
 @import url(/vendor/normalize.css);
 @import url(/vendor/fonts.css);
-.page {
-  background-color: #2a2c2f;
-  color: #ffff;
-  max-width: 1280px;
+@import url(/blocks/page.css);
+@import url(/blocks/header.css);
+@import url(/blocks/main.css);
+@import url(/blocks/content.css);
+@import url(/blocks/footer.css);
+
+@media screen and (max-width: 768px) {
+  .header__logo {
+    margin-top: 30px;
+    max-height: 66px;
+    height: 100%;
+  }
+
+  .header__title {
+    margin-top: 90px;
+    font-size: 75px;
+    line-height: 79px;
+
+    max-width: 530px;
+    width: 100%;
+  }
+
+  .header__subtitle {
+    margin-top: 25px;
+  }
+
+  .header__image {
+    margin-top: 30px;
+  }
+
+  .main__content {
+    margin-top: 90px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .content__title {
+    margin: 0px;
+    font-size: 45px;
+    line-height: 49px;
+  }
+
+  .content__text-main {
+    margin: 0px;
+    margin-top: 50px;
+
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .content__text-quote {
+    margin: 0px;
+
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .content__text-final {
+    margin: 0px;
+    margin-top: 32px;
+  }
+
+  .footer__copyright {
+    margin: 0px;
+    margin-top: 88px;
+  }
 }
 
-.header {
-}
+@media screen and (max-width: 320px) {
+  .header__logo {
+    margin-top: 20px;
+    max-width: 188px;
+    width: 100%;
+  }
 
-.header__logo {
-  width: 255px;
-  height: 69px;
-  padding: 34px 513px 91px;
-}
+  .header__title {
+    margin-top: 50px;
+    font-size: 40px;
+    line-height: 44px;
+    max-width: 228px;
+    width: 100%;
+  }
 
-.header__title {
-  margin: 0px;
-  padding: 0px 280px 32px;
-  text-align: center;
+  .header__subtitle {
+    margin-top: 16px;
 
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 900;
-  font-size: 96px;
-  line-height: 100px;
-}
+    font-size: 16px;
+    line-height: 20px;
 
-.header__subtitle {
-  margin: 0px;
-  padding: 0px 280px 64px;
-  text-align: center;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 36px;
+    max-width: 288px;
+    width: 100%;
+  }
 
-  width: 720px;
-  height: 72px;
-}
+  .header__image {
+    margin-top: 40px;
+  }
 
-.header__span {
-  display: block;
-}
+  .main__content {
+    margin-top: 64px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 
-.header__image {
-  margin: 0px 148px 92px;
-}
+  .content__title {
+    margin: 0px;
+    font-size: 32px;
+    line-height: 35px;
+  }
 
-.main {
-}
+  .content__text-main {
+    margin: 0px;
+    margin-top: 40px;
 
-.main__content {
-}
+    font-size: 24px;
+    line-height: 30px;
+  }
 
-.content {
-}
+  .content__text-quote {
+    margin-top: 10px;
 
-.content__title {
-  margin: 0px;
-  padding: 0px 302px 40px 148px;
+    font-size: 24px;
+    line-height: 34px;
+  }
 
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 900;
-  font-size: 54px;
-  line-height: 58px;
-
-  width: 830px;
-  height: 174px;
-}
-
-.content__text-main {
-  margin: 0px;
-  padding: 0px 394px 10px 148px;
-
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 34px;
-
-  width: 738px;
-  height: 135px;
-}
-
-.content__text-quote {
-  margin: 0px;
-  padding: 0px 400px 32px 148px;
-
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 34px;
-
-  width: 732px;
-  height: 34px;
-
-  text-align: end;
-}
-
-.content__text-final {
-  margin: 0px;
-  padding: 0px 410px 92px 148px;
-
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 163%;
-
-  width: 722px;
-  height: 181px;
-}
-
-.footer {
-  max-width: 1280px;
-  background-color: #2a2c2f;
-  color: #ffff;
-}
-
-.footer__copyright {
-  margin: 0px;
-  padding: 0px 543px 24px;
-
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-
-  width: 194px;
-  height: 16px;
+  .footer__copyright {
+    margin: 0px;
+    margin-top: 64px;
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
