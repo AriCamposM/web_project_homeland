@@ -5,3 +5,265 @@
 @import url(../blocks/main.css);
 @import url(../blocks/content.css);
 @import url(../blocks/footer.css);
+
+.content__gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 16px;
+  row-gap: 16px;
+  padding-top: 116px;
+  padding-left: 43px;
+  padding-right: 53px;
+}
+
+.content__gallery-image {
+  max-width: 284px;
+  max-height: 213px;
+  width: 100%;
+  height: 100%;
+}
+
+.content__places {
+}
+
+.content__place {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "title title artist artist"
+    "img img p1 p1"
+    "img img p2 p2"
+    "button button . .";
+  column-gap: 40px;
+  row-gap: 48px;
+  padding-left: 151px;
+  padding-right: 145px;
+  padding-top: 92px;
+}
+
+.content__place-1 {
+}
+
+.content__place__title {
+  grid-area: title;
+  margin: 0px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 76px;
+  color: #ffffff;
+}
+
+.content__place__artist {
+  grid-area: artist;
+  align-self: end;
+}
+
+.content__place__artist-url {
+  margin: 0px;
+  padding-bottom: 8px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+
+  color: #aaaaaa;
+}
+
+.content__place__artist-text {
+  margin: 0px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.content__place__image {
+  grid-area: img;
+  align-self: end;
+}
+
+.content__place__text-1 {
+  grid-area: p1;
+  margin: 0px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+
+  color: #ffffff;
+}
+
+.content__place__text-2 {
+  grid-area: p2;
+  margin: 0px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+
+  color: #ffffff;
+}
+
+.content__place__button {
+  grid-area: button;
+  background: linear-gradient(90deg, #0278fe 0%, #003a7b 99.98%);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  max-width: 289px;
+  max-height: 48px;
+  width: 100%;
+  height: 100%;
+  padding: 13px 20px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.content__place__button-text {
+  margin: 0px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+  .content__gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: 16px;
+    row-gap: 16px;
+    padding-top: 64px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .content__gallery-image {
+    max-width: 352px;
+    max-height: 264px;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* aca empieza la seccion places */
+  .content__place {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "title title artist artist"
+      "img img p1 p1"
+      "img img p2 p2"
+      "button button . .";
+    column-gap: 28px;
+    row-gap: 48px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 88px;
+  }
+
+  .content__place-1 {
+  }
+
+  .content__place__title {
+    font-size: 42px;
+    line-height: 46px;
+    align-self: end;
+  }
+
+  .content__place__artist {
+    grid-area: artist;
+  }
+
+  .content__place__artist-url {
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .content__place__artist-text {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .content__place__image {
+    grid-area: img;
+    align-self: end;
+    max-width: 340px;
+    max-height: 340px;
+    align-self: auto;
+  }
+
+  .content__place__text-1 {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .content__place__text-2 {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .content__place__button {
+    grid-area: button;
+    background: linear-gradient(90deg, #0278fe 0%, #003a7b 99.98%);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    max-width: 289px;
+    max-height: 48px;
+    width: 100%;
+    height: 100%;
+    padding: 13px 20px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
+  .content__place__button-text {
+    margin: 0px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #ffffff;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .content__gallery {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    column-gap: 16px;
+    row-gap: 12px;
+    padding-top: 38px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .content__gallery-image {
+    max-width: 288px;
+    max-height: 216px;
+    width: 100%;
+    height: 100%;
+  }
+}
