@@ -105,7 +105,7 @@
   gap: 40px;
 }
 
-.content__place__title {
+.content__place-title {
   grid-area: title;
   font-family: "Inter";
   font-style: normal;
@@ -117,13 +117,13 @@
   margin: 0px;
 }
 
-.content__place__artist {
+.content__place-artist {
   grid-area: artist;
   max-width: 456px;
   align-self: end;
 }
 
-.content__place__image {
+.content__place-image {
   grid-area: image;
   width: 100%;
   object-fit: cover;
@@ -133,17 +133,17 @@
   width: 100%;
 }
 
-.content__place__paragraphs {
+.content__place-paragraphs {
   grid-area: paragraphs;
 }
 
-.content__place__image:hover {
+.content__place-image:hover {
   background-color: rgba(0, 0, 0, 0.5);
   box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
   opacity: 50%;
 }
 
-.content__place__artist-url {
+.content__place-artist-url {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -154,7 +154,7 @@
   color: #aaaaaa;
 }
 
-.content__place__artist-text {
+.content__place-artist-text {
   margin: 0px;
   font-family: "Inter";
   font-style: normal;
@@ -164,7 +164,7 @@
   color: #ffffff;
 }
 
-.content__place__text-1 {
+.content__place-text-1 {
   margin: 0px;
   font-family: "Inter";
   font-style: normal;
@@ -176,7 +176,7 @@
   margin-bottom: 26px;
 }
 
-.content__place__text-2 {
+.content__place-text-2 {
   margin: 0px;
 
   font-family: "Inter";
@@ -188,7 +188,7 @@
   max-width: 484px;
   margin-bottom: 26px;
 }
-.content__place__text-3 {
+.content__place-text-3 {
   margin: 0px;
 
   font-family: "Inter";
@@ -200,7 +200,7 @@
   max-width: 484px;
 }
 
-.content__place__button {
+.content__place-button {
   grid-area: button;
   background: linear-gradient(90deg, #0278fe 0%, #003a7b 99.98%);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
@@ -215,7 +215,7 @@
   box-sizing: border-box;
 }
 
-.content__place__button:hover {
+.content__place-button:hover {
   background: linear-gradient(
     90deg,
     rgba(2, 120, 254, 0.25) 0%,
@@ -225,7 +225,7 @@
   border-radius: 4px;
 }
 
-.content__place__button-text {
+.content__place-button-text {
   margin: 0px;
   font-family: "Inter";
   font-style: normal;
@@ -291,13 +291,13 @@
     height: 100%;
   }
 
-  .content__place__title {
+  .content__place-title {
     font-size: 42px;
     line-height: 46px;
     align-self: end;
   }
 
-  .content__place__image {
+  .content__place-image {
     max-width: 340px;
     max-height: 340px;
     height: 100%;
@@ -351,18 +351,18 @@
     padding-bottom: 50px;
   }
 
-  .content__place__title {
+  .content__place-title {
     font-size: 32px;
     line-height: 35px;
     align-self: center;
   }
 
-  .content__place__button-text {
+  .content__place-button-text {
     font-size: 14px;
     line-height: 17px;
   }
 
-  .content__place__image {
+  .content__place-image {
     max-width: 320px;
     max-height: 320px;
     height: 100%;
