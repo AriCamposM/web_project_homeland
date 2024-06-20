@@ -216,13 +216,7 @@
 }
 
 .content__place-button:hover {
-  background: linear-gradient(
-    90deg,
-    rgba(2, 120, 254, 0.25) 0%,
-    rgba(0, 58, 123, 0.25) 99.98%
-  );
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
-  border-radius: 4px;
+  background: linear-gradient(90deg, #0278fe40 0%, #003a7b40 99.98%);
 }
 
 .content__place-button-text {
@@ -232,7 +226,9 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
-  color: #ffffff;
+  list-style: none;
+  text-decoration: none;
+  color: #fff;
 }
 
 .content__place__button-link {
@@ -302,6 +298,11 @@
     max-height: 340px;
     height: 100%;
     width: 100%;
+  }
+
+  .content__place-button-text {
+    font-size: 14px;
+    line-height: 17px;
   }
 }
 
