@@ -133,7 +133,7 @@
   width: 100%;
 }
 
-.content__place_paragraphs {
+.content__place__paragraphs {
   grid-area: paragraphs;
 }
 
