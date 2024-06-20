@@ -133,6 +133,10 @@
   width: 100%;
 }
 
+.content__place_paragraphs {
+  grid-area: paragraphs;
+}
+
 .content__place__image:hover {
   background-color: rgba(0, 0, 0, 0.5);
   box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
