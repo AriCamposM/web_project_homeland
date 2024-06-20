@@ -234,6 +234,11 @@
   color: #ffffff;
 }
 
+.content__place__button-link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 @media screen and (max-width: 768px) {
   .content__title {
     margin: 0px;
